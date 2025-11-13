@@ -3,9 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfólió</title>
+
+    <meta name="author" content="Majoros Áron">
+    <meta name="description" content="Majoros Áron portfóliója: front end fejlesztő, UI/UX Designer, tapasztalatok, elérhetőségek, járművek">
+    <meta name="robots" content="index, follow">
+
+    <link rel="stylesheet" href="../Navbar/Navbar.css">
+    <link rel="stylesheet" href="Homepage.css">
+
 </head>
 <body>
+     <nav>
+        <ul>
+            <a href="../Homepage/Homepage.html" class="nav-item active">Főoldal</a>
+            <a href="../Aboutme/Aboutme.html" class="nav-item">Rólam</a>
+            <a href="../Vehicles/Vehicles.html" class="nav-item">Jármúveim</a>
+            <a href="../Contact/Contact.html" class="nav-item">Kapcsolat</a>
+            <a href="" class="nav-item">Oldal 5</a>
+            <a href="" class="nav-item">Oldal 6</a>
+            <a href="../Work/Work.html" class="nav-item">Munkáim</a>
+            <a href="../Links/Links.html" class="nav-item">Hasznos linkek</a>
+        </ul>
+    </nav>
+    <div class="homepage-container">
+    <div class="koszones"><p>Szia! Üdvözöllek a weboldalamon!</p></div>
+    <div class="leiras">Majoros Áron vagyok, és ez a weboldalam!</div>
+    <div class="ora">
+        <?php include('../Clock/Homepage.php'); ?>
+    </div>
+    <div class="buttons-container">
+        <div class="rolam-button-container">
+        <div class="rolam">
+            <a href="../Aboutme/Aboutme.html">Rólam</a>
+        </div>
+        </div>
+        <div class="linkek-button-container">
+        <div class="linkek">
+            <a href="../Links/Links.html">Hasznos linkek</a>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <footer>
+    <div class="div-footer">
+        <span class="footer-left">&copy; 2025 Majoros Áron. Minden jog fenntartva.</span>
+        <span class="footer-right">
+            <?php include('../Clock/footer.php'); ?>
+        </span>
+    </div>
     
+</footer>
 </body>
 </html>
