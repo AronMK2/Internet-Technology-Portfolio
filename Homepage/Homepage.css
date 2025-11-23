@@ -12,27 +12,74 @@ html, body {
     background-size: cover;
     background-position: center;
 }
-footer {
-    position: fixed;
-    bottom: 0; 
-    width: 100%;
-    left: 0;
-    z-index: 100;
+p {
+color: white;
 }
-.div-footer {
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-    background-color: black; 
-    color: white; 
-    padding: 10px;
-    width: 100%;
-    min-height: 40px;
-    box-sizing: border-box;
+
+.homepage-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
 }
-.footer-left {
-    text-align: left;
+
+.koszones {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
 }
-.footer-right {
-    text-align: right;
+
+.leiras {
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.ora {
+margin-bottom: 30px;
+text-align: center;
+}
+
+.ido{
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #fff;
+}
+.datum {
+    font-size: 1.2rem;
+    color: #cfd8dc;
+    margin-top: 8px;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 40px;
+}
+
+.rolam-button-container, .linkek-button-container {
+padding-inline: 20px;
+}
+
+.rolam a, .linkek a {
+    display: inline-block;
+    background: linear-gradient(135deg, #6c7a89 60%, #3a539b 100%);
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0 2px 8px rgba(60,60,100,0.08);
+    padding: 14px 32px;
+    min-width: 140px;
+    text-align: center;
+}
+
+.rolam a:hover, .linkek a:hover {
+    transform: translateY(-2px) scale(1.05);
 }
