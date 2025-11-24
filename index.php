@@ -20,10 +20,10 @@
         <ul>
             <a href="../Homepage/Homepage.html" class="nav-item active">Főoldal</a>
             <a href="../Aboutme/Aboutme.html" class="nav-item">Rólam</a>
-            <a href="../Vehicles/Vehicles.html" class="nav-item">Járműveim</a>
             <a href="../Contact/Contact.html" class="nav-item">Kapcsolat</a>
-            <a href="" class="nav-item">Oldal 5</a>
-            <a href="" class="nav-item">Oldal 6</a>
+            <a href="../Vehicles/ford.html" class="nav-item">Autó</a>
+            <a href="../Vehicles/yamaha.html" class="nav-item">Motor</a>
+            <a href="../VTS/vts.html" class="nav-item">Órarend</a>
             <a href="../Work/Work.html" class="nav-item">Munkáim</a>
             <a href="../Links/Links.html" class="nav-item">Hasznos linkek</a>
         </ul>
