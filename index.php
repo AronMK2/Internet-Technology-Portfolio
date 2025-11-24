@@ -10,7 +10,7 @@
     <meta name="robots" content="index, follow">
 
     <link rel="stylesheet" href="../Navbar, Footer/Navbar.css">
-    <link rel="stylesheet" href="Homepage.css">
+    <link rel="stylesheet" href="../Homepage/Homepage.css">
     <link rel="stylesheet" href="../Navbar, Footer/Footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
@@ -32,12 +32,8 @@
         <div class="koszones"><p>Szia! Üdvözöllek a weboldalamon!</p></div>
         <div class="leiras"><p>Majoros Áron vagyok, és ez az iskolai projekt weboldalam!</p></div>
         <div class="ora">
-            <div class="ido">
-                <?php echo date('H:i:s'); ?>
-            </div>
-            <div class="datum">
-                <?php echo date('Y. m. d.'); ?>
-            </div>
+            <div class="ido" id="live-time"></div>
+            <div class="datum" id="live-date"></div>
         </div>
         <div class="buttons-container">
             <div class="rolam-button-container">
@@ -58,5 +54,17 @@
             <span class="footer-right">Majoros Áron</span>
         </div>
     </footer>
+    <script>
+        function updateClock() {
+            const now = new Date();
+            const pad = n => n.toString().padStart(2, '0');
+            document.getElementById('live-time').textContent =
+                pad(now.getHours()) + ':' + pad(now.getMinutes()) + ':' + pad(now.getSeconds());
+            document.getElementById('live-date').textContent =
+                now.getFullYear() + '. ' + pad(now.getMonth()+1) + '. ' + pad(now.getDate()) + '.';
+        }
+        setInterval(updateClock, 1000);
+        updateClock();
+    </script>
 </body>
 </html>
