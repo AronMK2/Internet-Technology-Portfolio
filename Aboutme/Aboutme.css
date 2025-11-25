@@ -76,6 +76,91 @@ body {
     background: transparent;
 }
 
+.cvbutton {
+  display: inline-block;
+  position: relative;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 10px 30px 20px 30px;
+  background: rgba(0, 0, 0, 0.09);
+}
+
+.cvspan {
+  display: block;
+  padding: 25px 80px;
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: white;
+  text-decoration: none;
+}
+.downloadcv {
+    text-decoration: none !important;
+}
+
+.cvbutton::before,
+.cvbutton::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: #fff;
+}
+
+.cvspan::before,
+.cvspan::after {
+  content: "";
+  width: 2px;
+  height: 0;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: #fff;
+}
+.cvbutton:hover::before,
+.cvbutton:hover::after {
+  width: 100%;
+}
+.cvbutton:hover .cvspan::before,
+.cvbutton:hover .cvspan::after {
+  height: 100%;
+}
+.cvbutton::before,
+.cvbutton::after {
+  transition-delay: 0.2s;
+}
+.cvbutton .cvspan::before,
+.cvbutton .cvspan::after {
+  transition-delay: 0s;
+}
+.cvbutton::before {
+  right: 0;
+  top: 0;
+}
+.cvbutton::after {
+  left: 0;
+  bottom: 0;
+}
+.cvbutton .cvspan::before {
+  left: 0;
+  top: 0;
+}
+.cvbutton .cvspan::after {
+  right: 0;
+  bottom: 0;
+}
+.cvbutton:hover::before,
+.cvbutton:hover::after {
+  transition-delay: 0s;
+}
+.cvbutton:hover .cvspan::before,
+.cvbutton:hover .cvspan::after {
+  transition-delay: 0.2s;
+}
+
 @media (max-width: 1450px) {
     .aboutme-main {
         display: flex;
@@ -87,7 +172,10 @@ body {
         flex-direction: column;
         align-items: center;
         padding-right: 0;
-        margin-bottom: 30px;
+        margin-bottom: 80px;
+    }
+    .aboutme-left p {
+        text-align: center;
     }
     .aboutme-right img {
         max-width: 300px;

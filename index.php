@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólió</title>
+    <link rel="icon" type="image/x-icon" href="/Images/logo-feher.png">
 
     <meta name="author" content="Majoros Áron">
     <meta name="description" content="Majoros Áron portfóliója: front end fejlesztő, UI/UX Designer, tapasztalatok, elérhetőségek, járművek">
@@ -18,12 +19,12 @@
 <body>
      <nav>
         <ul>
-            <a href="../Homepage/Homepage.html" class="nav-item active">Főoldal</a>
+            <a href="index.php" class="nav-item active">Főoldal</a>
             <a href="../Aboutme/Aboutme.html" class="nav-item">Rólam</a>
             <a href="../Contact/Contact.html" class="nav-item">Kapcsolat</a>
             <a href="../Vehicles/ford.html" class="nav-item">Autó</a>
             <a href="../Vehicles/yamaha.html" class="nav-item">Motor</a>
-            <a href="../VTS/vts.html" class="nav-item">Órarend</a>
+            <a href="../Gallery/Gallery.html" class="nav-item">Galléria</a>
             <a href="../Work/Work.html" class="nav-item">Munkáim</a>
             <a href="../Links/Links.html" class="nav-item">Hasznos linkek</a>
         </ul>
