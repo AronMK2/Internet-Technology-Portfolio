@@ -14,20 +14,32 @@
     <link rel="stylesheet" href="../Homepage/Homepage.css">
     <link rel="stylesheet" href="../Navbar, Footer/Footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
 </head>
 <body>
-     <nav>
-        <ul>
-            <a href="index.php" class="nav-item active">Főoldal</a>
-            <a href="../Aboutme/Aboutme.html" class="nav-item">Rólam</a>
-            <a href="../Contact/Contact.html" class="nav-item">Kapcsolat</a>
-            <a href="../Vehicles/ford.html" class="nav-item">Autó</a>
-            <a href="../Vehicles/yamaha.html" class="nav-item">Motor</a>
-            <a href="../Gallery/Gallery.html" class="nav-item">Galléria</a>
-            <a href="../Work/Work.html" class="nav-item">Munkáim</a>
-            <a href="../Links/Links.html" class="nav-item">Hasznos linkek</a>
-        </ul>
+     <nav class="navbar">
+        <div class="navbar-left">
+                <img src="/Images/logo-feher.png" alt="Logo" class="navbar-logo">
+            </a>
+        </div>
+        <div class="navbar-right">
+            <button class="navbar-hamburger" aria-label="Menü megnyitása">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <div class="navbar-menu">
+            <ul>
+                <a href="/" class="nav-item active">Főoldal</a>
+                <a href="../Aboutme/Aboutme.html" class="nav-item">Rólam</a>
+                <a href="../Contact/Contact.html" class="nav-item">Kapcsolat</a>
+                <a href="../Vehicles/ford.html" class="nav-item">Autó</a>
+                <a href="../Vehicles/yamaha.html" class="nav-item">Motor</a>
+                <a href="../Gallery/Gallery.html" class="nav-item">Galléria</a>
+                <a href="../Work/Work.html" class="nav-item">Munkáim</a>
+                <a href="../Links/Links.html" class="nav-item">Hasznos linkek</a>
+            </ul>
+        </div>
     </nav>
     <div class="homepage-container animate__animated animate__fadeInDown">
         <div class="koszones"><p>Szia! Üdvözöllek a weboldalamon!</p></div>
@@ -66,6 +78,12 @@
         }
         setInterval(updateClock, 1000);
         updateClock();
+
+        const hamburger = document.querySelector('.navbar-hamburger');
+        const menu = document.querySelector('.navbar-menu');
+        hamburger.addEventListener('click', () => {
+            menu.classList.toggle('open');
+        });
     </script>
 </body>
 </html>
