@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Orbitron', Arial, sans-serif;
+    background-image: url('/Images/Wallpaper11.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: center;
+}
+
+.glass-contact-box {
+  margin: 2rem auto;
+  max-width: 420px;
+  background: rgba(255,255,255,0.18);
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.18);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.28);
+  padding: 2.2rem 2rem 2rem 2rem;
+  color: white;
+}
+
+.glass-contact-box h2 {
+  margin-top: 0;
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.contact-desc {
+  color: white;
+  font-size: 1rem;
+  margin-bottom: 1.6rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.contact-form input,
+.contact-form select {
+  background: rgba(255,255,255,0.6);
+  border: 1px solid #e2e2e2;
+  border-radius: 8px;
+  padding: 0.8rem;
+  font-size: 1rem;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border 0.2s;
+}
+.form-row.single {
+  display: flex;
+  gap: 0;
+}
+
+.form-row.single input {
+  width: 100%;
+}
+
+.contact-form input:focus,
+.contact-form select:focus {
+  border-color: #222;
+}
+.contact-btn {
+  margin-top: 1.2rem;
+  background: #111827;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.contact-btn:hover {
+  background: #222;
+}
+
+@media (max-width: 700px) {
+  .glass-contact-box {
+    max-width: 80%;
+    padding: 1.2rem 0.7rem 1.2rem 0.7rem;
+  }
+  .form-row,
+  .form-row.single {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

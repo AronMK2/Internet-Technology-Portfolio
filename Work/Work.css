@@ -28,11 +28,12 @@ body {
     grid-template-columns: 1fr 1.2fr 1fr;
     gap: 32px;
     align-items: center;
-    background: #353d48;
+    background: rgba(53, 61, 72, 0.55);
     border-radius: 12px;
     padding: 32px 24px;
     margin-bottom: 48px;
     box-shadow: 0 2px 16px rgba(0,0,0,0.04);
+    backdrop-filter: blur(14px);
 }
 
 .work-featured-label {
@@ -66,12 +67,13 @@ body {
     margin-top: 24px;
 }
 .work-grid-item {
-    background: #353d48;
+    background: rgba(53, 61, 72, 0.55);
     border-radius: 12px;
     box-shadow: 0 2px 12px rgba(0,0,0,0.04);
     padding: 18px 12px 24px 12px;
     text-align: center;
     transition: transform 0.2s, box-shadow 0.2s;
+    backdrop-filter: blur(14px);
 }
 .work-grid-item:hover {
     transform: translateY(-6px) scale(1.04);

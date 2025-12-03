@@ -18,3 +18,11 @@ footer {
     gap: 40px;
     text-align: center;
 }
+@media screen and (max-width: 1400px) {
+    .div-footer {
+        flex-direction: column; 
+        text-align: center;
+        gap: 10px;
+    }
+    
+}
