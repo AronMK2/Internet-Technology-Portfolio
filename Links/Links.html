@@ -16,25 +16,30 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <a href="/" class="nav-item">Főoldal</a>
-            <a href="../Aboutme/Aboutme.html" class="nav-item">Rólam</a>
-            <a href="../Contact/Contact.html" class="nav-item">Kapcsolat</a>
-            <a href="../Vehicles/ford.html" class="nav-item">Autó</a>
-            <a href="../Vehicles/yamaha.html" class="nav-item">Motor</a>
-            <a href="../Gallery/Gallery.html" class="nav-item">Galléria</a>
-            <a href="../Work/Work.html" class="nav-item">Munkáim</a>
-            <a href="../Links/Links.html" class="nav-item active">Hasznos linkek</a>
-        </ul>
-    </nav>
-     <footer>
-        <div class="div-footer">
-            <span class="footer-left">&copy; 2025 Minden jog fenntartva.</span>
-            <span class="footer-right">Majoros Áron</span>
+    <nav class="navbar">
+        <div class="navbar-left">
+                <img src="/Images/logo-feher.png" alt="Logo" class="navbar-logo">
+            </a>
         </div>
-    </footer>
-    <main class="links-main">
+        <div class="navbar-right">
+            <button class="navbar-hamburger" aria-label="Menü megnyitása">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <div class="navbar-menu">
+            <ul>
+                <a href="/" class="nav-item">Főoldal</a>
+                <a href="../Aboutme/Aboutme.html" class="nav-item">Rólam</a>
+                <a href="../Contact/Contact.html" class="nav-item">Kapcsolat</a>
+                <a href="../Vehicles/ford.html" class="nav-item">Autó</a>
+                <a href="../Vehicles/yamaha.html" class="nav-item">Motor</a>
+                <a href="../Gallery/Gallery.html" class="nav-item">Galléria</a>
+                <a href="../Work/Work.html" class="nav-item">Munkáim</a>
+                <a href="../Links/Links.html" class="nav-item active">Hasznos linkek</a>
+            </ul>
+        </div>
+    </nav>
+     <main class="links-main">
         <h1 class="links-title">Hasznos linkek</h1>
         <ul class="links-list">
             <li>
@@ -75,5 +80,19 @@
             </li>
         </ul>
     </main>
+     <footer>
+        <div class="div-footer">
+            <span class="footer-left">&copy; 2025 Minden jog fenntartva.</span>
+            <span class="footer-right">Majoros Áron</span>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector('.navbar-hamburger');
+        const menu = document.querySelector('.navbar-menu');
+        hamburger.addEventListener('click', () => {
+            menu.classList.toggle('open');
+        });
+    </script>
 </body>
 </html>

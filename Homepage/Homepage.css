@@ -83,3 +83,12 @@ padding-inline: 20px;
 .rolam a:hover, .linkek a:hover {
     transform: translateY(-2px) scale(1.05);
 }
+@media (max-width: 600px) {
+    .koszones {
+        max-width: 80%;
+    }
+    .buttons-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+}

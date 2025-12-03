@@ -81,6 +81,7 @@ body {
   font-weight: 600;
   cursor: pointer;
   transition: background 0.2s;
+  font-family: 'Orbitron', Arial, sans-serif;
 }
 
 .contact-btn:hover {

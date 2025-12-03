@@ -103,11 +103,17 @@ body {
     .work-grid-row {
         grid-template-columns: repeat(2, 1fr);
         gap: 24px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
     }
     .work-featured-row {
         grid-template-columns: 1fr;
         gap: 16px;
         text-align: center;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
     }
     .work-featured-label, .work-featured-desc {
         text-align: center;
