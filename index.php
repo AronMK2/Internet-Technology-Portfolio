@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólió</title>
-    <link rel="icon" type="image/x-icon" href="/Images/logo-feher.png">
+    <link rel="icon" type="image/x-icon" href="Images/logo-feher.png">
 
     <meta name="author" content="Majoros Áron">
     <meta name="description" content="Majoros Áron portfóliója: front end fejlesztő, UI/UX Designer, tapasztalatok, elérhetőségek, járművek">
@@ -20,8 +20,7 @@
 <body>
      <nav class="navbar">
         <div class="navbar-left">
-                <img src="/Images/logo-feher.png" alt="Logo" class="navbar-logo">
-            </a>
+                <img src="Images/logo-feher.png" alt="Logo" class="navbar-logo">
         </div>
         <div class="navbar-right">
             <button class="navbar-hamburger" aria-label="Menü megnyitása">
@@ -30,7 +29,7 @@
         </div>
         <div class="navbar-menu">
             <ul>
-                <a href="/" class="nav-item active">Főoldal</a>
+                <a href="index.php" class="nav-item active">Főoldal</a>
                 <a href="Aboutme/Aboutme.html" class="nav-item">Rólam</a>
                 <a href="Contact/Contact.html" class="nav-item">Kapcsolat</a>
                 <a href="Vehicles/ford.html" class="nav-item">Autó</a>
@@ -45,18 +44,17 @@
         <div class="koszones"><p>Szia! Üdvözöllek a weboldalamon!</p></div>
         <div class="leiras"><p>Majoros Áron vagyok, és ez az iskolai projekt weboldalam!</p></div>
         <div class="ora">
-            <div class="ido" id="live-time"></div>
-            <div class="datum" id="live-date"></div>
+            <div class="ido" id="datetime"></div>
         </div>
         <div class="buttons-container">
             <div class="rolam-button-container">
                 <div class="rolam">
-                    <a href="../Aboutme/Aboutme.html">Rólam</a>
+                    <a href="Aboutme/Aboutme.html">Rólam</a>
                 </div>
             </div>
             <div class="linkek-button-container">
                 <div class="linkek">
-                    <a href="../Links/Links.html">Hasznos linkek</a>
+                    <a href="Links/Links.html">Hasznos linkek</a>
                 </div>
             </div>
         </div>
@@ -68,16 +66,14 @@
         </div>
     </footer>
     <script>
-        function updateClock() {
-            const now = new Date();
-            const pad = n => n.toString().padStart(2, '0');
-            document.getElementById('live-time').textContent =
-                pad(now.getHours()) + ':' + pad(now.getMinutes()) + ':' + pad(now.getSeconds());
-            document.getElementById('live-date').textContent =
-                now.getFullYear() + '. ' + pad(now.getMonth()+1) + '. ' + pad(now.getDate()) + '.';
+            function updateDateTime() {
+            fetch('ora.php')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('datetime').innerHTML = data;
+            });
         }
-        setInterval(updateClock, 1000);
-        updateClock();
+        setInterval(updateDateTime, 1000);
 
         const hamburger = document.querySelector('.navbar-hamburger');
         const menu = document.querySelector('.navbar-menu');

@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Orbitron', Arial, sans-serif;
-    background-image: url('/Images/Wallpaper11.jpg');
+    background-image: url('../Images/Wallpaper11.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat; 
     background-size: cover;
@@ -92,6 +92,7 @@ body {
   .glass-contact-box {
     max-width: 80%;
     padding: 1.2rem 0.7rem 1.2rem 0.7rem;
+    margin-bottom: 80px;
   }
   .form-row,
   .form-row.single {
